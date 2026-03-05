@@ -85,6 +85,7 @@ php artisan test
 
 ## 補足
 ・本アプリではプロフィール画像・商品画像をsrc/storage/app/pubic/ 配下に配置しています。
+
 ・対象ブラウザはChrome•Firefox•Safariの最新バージョンとし、旧ブラウザ対応は行わない。
 
 ・開発テスト用に下記ユーザ情報を1件作成してあります。
