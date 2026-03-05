@@ -73,9 +73,9 @@ php artisan test
 - Database : MySQL 8.0.26
 - Web Server: Nginx 1.21.1
 - Tool/Library:
-    ・Laravel Fortify(認証)
-    ・Mailtrap（メール送信テスト）
-    ・fortify Stripe PHP SDK(決済処理)
+    ・Laravel Fortify(認証)  
+    ・Mailtrap8(メール送信テスト)  
+    ・fortify Stripe PHP SDK(決済処理)  
     ・Docker/Docker Compose
 
 
