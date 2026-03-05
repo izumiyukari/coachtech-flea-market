@@ -1,0 +1,191 @@
+/* 出品画面 */
+.item-form {
+    max-width: 680px;
+    margin: 0 auto 80px;
+}
+
+.item-form__section {
+    margin-bottom: 50px;
+}
+
+.item-form__heading {
+    font-weight: bold;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #999;
+    color: #666;
+    font-size: 20px
+}
+
+.item-form__group {
+    margin-bottom: 24px;
+}
+
+.item-form__group>label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.image-upload {
+    border: 1px dashed #ccc;
+    text-align: center;
+    padding: 20px 20px 30px;
+}
+
+.item__image {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+
+.item__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.image__upload-btn {
+    background: #fff;
+    border: 1px solid #ff5555;
+    color: #ff5555;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: auto;
+}
+
+.item-form__image {
+    border: 1px dashed #ccc;
+    padding: 50px;
+    text-align: center;
+}
+
+.item-form input[type="text"],
+.item-form input[type="number"],
+.item-form select,
+.item-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #000;
+}
+
+.item-form input:focus {
+    border: 1px solid #e60023;
+}
+
+.item-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.category-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 25px;
+    margin-left: 20px;
+}
+.category_input{
+    padding: 6px 20px;
+}
+
+.category-group label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.category-group input {
+    display: none;
+}
+
+.category-group span {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid #e60023;
+    border-radius: 20px;
+    color: #e60023;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.category-group input:checked+span {
+    background: #e60023;
+    color: #fff;
+}
+
+.item__select {
+    position: relative;
+    font-size: 14px;
+    width: 100%;
+}
+
+.select__trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.item__select.open .select__trigger {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.select__options {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    border: 1px solid #000;
+    border-top: none;
+    list-style: none;
+    padding: 6px 6px;
+    margin: 0;
+    display: none;
+    border-radius: 5px;
+}
+
+.item__select.open .select__options {
+    display: block;
+}
+
+.select__options .option-item {
+    padding: 8px 12px 8px 32px;
+    color: #fff;
+    position: relative;
+}
+
+.select__options .option-item.selected::before {
+    content: "✔";
+    position: absolute;
+    left: 12px;
+}
+
+.select__options .option-item:hover {
+    background-color: #1976d2;
+    cursor: pointer;
+}
+
+.item-form__submit {
+    width: 100%;
+    padding: 14px;
+    background: #e60023;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}

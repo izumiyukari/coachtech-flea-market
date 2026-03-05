@@ -1,0 +1,117 @@
+/* 会員登録画面 */
+.auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth__form {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.auth__form--login {
+    text-align: center;
+    color: red;
+    font-size: 0.8rem;
+    margin: 0;
+    width: 100%;
+}
+
+.auth__group {
+    margin:10px 0 20px;
+}
+
+.auth__content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.auth__label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.auth__input {
+    display: block;
+    height: 40px;
+    width: 100%;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+.auth-button {
+    display: block;
+    width: 90%;
+    height: 40px;
+    margin: 50px auto 5px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.auth-link {
+    margin-left: -20px;
+    text-decoration: none;
+    color: #0073cc;
+}
+
+/* メール認証画面 */
+.verify__text {
+    margin-top: 150px;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.auth-link-box {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.verify-button {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #d3d3d3;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.verify-button:hover {
+    background-color: #c0c0c0;
+}
+
+.auth-resend-form {
+    margin-top: 20px;
+}
+
+.resend-link-button {
+    background: none;
+    border: none;
+    color: #3490dc;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.resend-link-button:hover {
+    text-decoration: underline;
+}

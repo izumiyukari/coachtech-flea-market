@@ -1,0 +1,260 @@
+/* 商品一覧画面　 */
+.item-list__content {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.item-tabs {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin: 60px 0 40px;
+}
+
+.item-tabs-inner {
+    display: flex;
+    gap: 80px;
+    padding-left: 10%;
+}
+
+.item-tab {
+    font-size: 20px;
+    padding: 12px 0 10px;
+    text-decoration: none;
+    color: #555;
+    border-bottom: 3px solid transparent;
+    font-weight: 700;
+}
+
+.item-tab.is-active {
+    color: red;
+}
+
+.item-list-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 50px;
+    margin: auto;
+    width: 85%;
+    padding: 20px auto 0;
+}
+
+/* 商品詳細画面 */
+.item-detail__content {
+    max-width: 1540px;
+    margin: 0 auto;
+    padding: 100px;
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+    justify-content: center;
+}
+
+.item-detail__image {
+    flex: 0 0 45%;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.item-detail__image img {
+    width: 100%;
+    display: block;
+}
+
+.item-detail__info {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 300px;
+}
+
+.item-detail__info form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.item-detail__title {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.item-detail__brand {
+    margin: 4px 0 0;
+}
+
+.item-detail__price {
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+.item-detail__price span {
+    font-size: 14px;
+}
+
+.item-detail__actions {
+    display: flex;
+    gap: 32px;
+    margin: 16px 0;
+}
+
+.item-action-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    width: fit-content;
+}
+
+.item-favorite{
+    width: 30px;;
+    height: auto;
+    object-fit: contain;
+}
+
+.item-bubble {
+    width: 26px;;
+    height: auto;
+    object-fit: contain;
+}
+
+.item-count {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.purchase-btn {
+    display: block;
+    width: 100%;
+    background: red;
+    max-width: 600px;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    margin: 8px 0 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.item-detail__heading {
+    margin: 24px 0 16px;
+    font-size: 24px;
+}
+
+.item-detail__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.item-detail__meta-group {
+    display: flex;
+    align-items: center;
+}
+
+.item-detail__meta-group p {
+    font-weight: bold;
+    margin: 0;
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.label {
+    background: #eee;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.condition-text{
+    display: inline-block;
+    padding: 4px 0;
+    font-size: 14px;
+}
+
+.comment-title {
+    margin-bottom: 8px;
+}
+
+.comment__content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.comment__user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.comment__avatar {
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.comment__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.comment__avatar-default {
+    width: 50px;
+    height: 50px;
+    background-color: #d1d1d1;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.comment__name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.comment__body {
+    background: #f5f5f5;
+    padding: 12px;
+    margin: 0;
+    width: 100%;
+    min-height: 50px;
+}
+
+.comment-form__heading{
+    margin: 24px 0 0;
+    font-size: 24px;
+}
+
+.comment-form {
+    width: 100%;
+    height: 120px;
+    max-width: 600px;
+    display: block;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.comment-submit {
+    width: 100%;
+    max-width: 600px;
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    margin: 24px 0 0;
+    display: block;
+}
+
+/* {
+    outline: 1px solid red;
+}*/

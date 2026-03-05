@@ -1,0 +1,192 @@
+/* 購入画面 */
+.purchase__content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.purchase__form {
+    margin: 80px auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 120px;
+}
+
+.order__info {
+    flex: 1;
+}
+
+.order__item {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid;
+}
+
+.order__image {
+    width: 200px;
+}
+
+.order__title{
+    margin: 0;
+}
+
+.order__price{
+    font-size: 25px;
+}
+
+.order__block {
+    padding: 10px 30px 20px;
+    border-bottom: 1px solid;
+}
+
+.order__heading {
+    margin: 20px 0 15px;
+    font-weight: bold;
+}
+
+.order__select {
+    position: relative;
+    width: 300px;
+    margin: 10px 50px;
+    font-size: 14px;
+}
+
+.select__trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.order__select.open .select__trigger {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.select__options {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    border: 1px solid #000;
+    border-top: none;
+    list-style: none;
+    padding: 6px 6px;
+    margin: 0;
+    display: none;
+    border-radius: 5px;
+}
+
+.order__select.open .select__options {
+    display: block;
+}
+
+.select__options .option-item {
+    padding: 8px 12px 8px 32px;
+    color: #fff;
+    position: relative;
+}
+
+.select__options .option-item.selected::before {
+    content: "✔";
+    position: absolute;
+    left: 12px;
+}
+
+.select__options .option-item:hover{
+    background-color: #1976d2;
+        cursor: pointer;
+}
+
+.order__address-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order__address-edit {
+    color: #0095ff;
+    text-decoration: none;
+}
+
+.payment__info {
+    width: 320px;
+    padding-top: 30px;
+}
+
+.payment__box {
+    border: 1px solid;
+    margin-bottom: 30px;
+}
+
+.payment__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid;
+}
+
+.payment__row:last-child {
+    border-bottom: none;
+}
+
+.purchase-btn {
+    margin-top: 20px;
+    width: 100%;
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* 住所変更画面 */
+.address__form {
+    width: 400px;
+}
+
+.address__group {
+    margin: 40px 0;
+}
+
+.address__content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.address__label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.address__input {
+    display: block;
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+.update-btn {
+    margin: 70px auto 0;
+    width: 60%;
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    display: block;
+}
