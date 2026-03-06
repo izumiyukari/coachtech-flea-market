@@ -71,20 +71,23 @@
             コメント({{ $item->comments->count() }})
         </h2>
         <div class="comment-list">
-            @if($latestComment = $item->comments->last())
+            @foreach($item->comments as $comment)
                 <div class="comment__content">
                     <div class="comment__user">
                         <div class="comment__avatar">
-                            @if($latestComment->user->profile && $latestComment->user->profile->profile_image)
-                                <img src="{{ asset('storage/' . $latestComment->user->profile->profile_image) }}" alt="プロフィール画像">
+                            @if($comment->user->profile && $comment->user->profile->profile_image)
+                                <img src="{{ asset('storage/' . $comment->user->profile->profile_image) }}" alt="プロフィール画像">
                             @else
                                 <div class="comment__avatar-default"></div>
                             @endif
-                        <p class="comment__name">{{ $latestComment->user->name }}</p>
+                        </div>
+                        <p class="comment__name">{{ $comment->user->name }}</p>
                     </div>
-                    <p class="comment__body">{{ $latestComment->comment }}</p>
+                    <p class="comment__body">{{ $comment->comment }}</p>
                 </div>
-                @else
+            @endforeach
+
+            @if($item->comments->isEmpty())
                 <div class="comment__content">
                     <p class="comment__body" style="color: #999;">まだコメントはありません。</p>
                 </div>
@@ -129,10 +132,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 'X-CSRF-TOKEN': document
                     .querySelector('meta[name="csrf-token"]')
                     .content,
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
             }
         })
-        .then(res => res.json())
+        .then(res => {
+            if (res.status === 401) {
+                window.location.href = "{{ route('login') }}";
+                return;
+            }
+            return res.json();
+        })
         .then(data => {
             countElement.innerText = data.count;
 

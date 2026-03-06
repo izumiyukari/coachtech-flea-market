@@ -67,6 +67,7 @@ class ItemController extends Controller
         ->findOrFail($item_id);
 
         return view('items.show', compact('item'));
+
     }
 
     /* いいね処理 */
